@@ -1,6 +1,6 @@
 const fs = require("fs");
 
-/* const requestHandler = (req, res) => {
+const requestHandler = (req, res) => {
   const url = req.url;
   const method = req.method;
 
@@ -36,9 +36,9 @@ const fs = require("fs");
   res.write("<body><h1>Hello from my Node.js Server!</h1></body>");
   res.write("</html>");
   res.end();
-}; */
+};
 
-function requestHandler(req, res) {
+/* function requestHandler(req, res) {
   const url = req.url;
   const method = req.method;
 
@@ -87,6 +87,6 @@ function requestHandler(req, res) {
       return res.end();
     });
   }
-}
+} */
 
 module.exports = requestHandler;
