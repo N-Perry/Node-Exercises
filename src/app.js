@@ -9,6 +9,10 @@ const shopRoutes = require("./routes/shop");
 // parse request body to be used by most/all other middlewares
 app.use(express.urlencoded({ extended: false }));
 
+// serve static files
+app.use(express.static(path.join(__dirname, "../", "public")));
+console.log(__dirname);
+
 app.use("/admin", adminRoutes);
 app.use(shopRoutes);
 
